@@ -269,9 +269,9 @@ int ssdp_success_dump(json_t *jsobj, void *cb_payload) {
 	const char *udn;
 	const char *xmlns;
 	
-	int ret =  json_unpack(jsobj, "{:{s:s}}", "device",
-												 );
-	printf("UDN=%s\n\n", udn);
+	/* int ret =  json_unpack(jsobj, "{:{s:s}}", "device", */
+	/* 											 ); */
+	/* printf("UDN=%s\n\n", udn); */
 
 	json_dumpf(jsobj, stdout, JSON_INDENT(2));
 	return 0;
